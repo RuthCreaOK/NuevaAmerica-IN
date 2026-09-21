@@ -1,0 +1,75 @@
+/* Reseteo básico y variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --text-dark: #1f2937;
+    --text-light: #4b5563;
+    --bg-light: #f3f4f6;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    position: relative;
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+main{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+        font-size: 2.2rem;
+    }
+li{
+  color: #000;
+    text-align: center;
+    font-size: 1.0rem;
+}
+p{
+    color: #ccc;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: var(--text-dark);
+    color: #9ca3af;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto;
+}
