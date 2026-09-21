@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - Plantilla Limpia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img class="img-ok" src="Logo-Ruthcreaok.jpg"></a>
+            <nav class="nav-links">
+                <a href="#">Inicio</a>
+                <a href="#articulos">Artículos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Bienvenido a Nuestra Plataforma</h1>
+            <p>Descubre todas las maravillas dl duseño y la biodiversidad.</p>
+            <a href="#articulos" class="btn-primary">Descubre más</a>
+        </div>
+    </section>
+
+    <!-- Artículos -->
+    <main id="articulos" class="container section">
+        <h2 class="section-title">Noticias</h2>
+        
+        <div class="articles-grid">
+            <!-- Artículo 1 -->
+            <article class="card">
+                <img src="Croma.jpeg" alt="Miniatura del artículo" class="card-img">
+                <div class="card-body">
+                    <span class="category">Tecnología</span>
+                    <h3 class="card-title">Diseño y implementación de un espacio Croma</h3>
+                    <p class="card-text">Interacción con la ciudadanida y interacción con los ecosistemas por medio de un croma y un programa para tomar fotos.</p>
+                    <a href="https://www.youtube.com/watch?v=G5afR961VCE" class="card-link">Leer más &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Artículo 2 -->
+            <article class="card">
+                <img src="ux-ui.png" alt="Miniatura del artículo" class="card-img">
+                <div class="card-body">
+                    <span class="category">Diseño</span>
+                    <h3 class="card-title">Principios de UI/UX</h3>
+                    <p class="card-text">Optimiza la experiencia de tus usuarios aplicando reglas básicas de contraste, tipografía y espacio. Para conocer Ecosistemas</p>
+                    <a href="https://www.parquesnacionales.gov.co/" class="card-link">Leer más &rarr;</a>
+                </div>
+            </article>
+
+            <!-- Artículo 3 -->
+            <article class="card">
+                <img src="ABC-ministerio-ambiente.png" alt="Miniatura del artículo" class="card-img">
+                <div class="card-body">
+                    <span class="category">ABC</span>
+                    <h3 class="card-title">El Camibio para la Biodiversidad </h3>
+                    <p class="card-text">Los nuevos lineamientos del Ministerio de Ambiente para el Agua, Biodiversidad y Comunidades. </p>
+                    <a href="https://www.minambiente.gov.co/wp-content/uploads/2026/08/Agenda_ABC-1.pdf" class="card-link">Leer más &rarr;</a>
+                </div>
+            </article>
+        </div>
+    </main>
+    <!-- Contacto -->
+    <section class="form-container">
+            <h2>Contáctanos</h2>
+            <p>Envíanos tu mensaje y te responderemos a la brevedad.</p>
+
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    placeholder="Ej. Ruth Creativa" 
+                    required
+                >
+                </div>
+
+                <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="tuusuario@correo.com" 
+                    required
+                >
+                </div>
+
+                <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="presupuesto">Solicitar presupuesto</option>
+                    <option value="soporte">Soporte técnico</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea 
+                    id="mensaje" 
+                    name="mensaje" 
+                    rows="5" 
+                    placeholder="Escribe tu mensaje aquí..." 
+                    required
+                ></textarea>
+                </div>
+
+                <div class="form-actions">
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                <button type="reset" class="btn-reset">Limpiar</button>
+                </div>
+            </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 copyright. Diseñado con HTML y CSS RuthCreaok</p>
+    </footer>
+
+</body>
+</html>
